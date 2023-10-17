@@ -1,24 +1,37 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import Contact from './details/contact';
+import Skills from './details/skills';
+import Education from './details/education';
+import AboutMe from './details/aboutme';
+import Experience from './details/experience';
+import Tools from './details/tools';
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div className="App">
+        <nav>
+          <ul>
+            <li><Link to="/contact">Contact</Link></li>
+            <li><Link to="/skills">Skills</Link></li>
+            <li><Link to="/education">Education</Link></li>
+            <li><Link to="/aboutme">About Me</Link></li>
+            <li><Link to="/experience">Experience</Link></li>
+            <li><Link to="/tools">Tools/Programming Language</Link></li>
+          </ul>
+        </nav>
+        <Routes>
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/skills" element={<Skills />} />
+          <Route path="/education" element={<Education />} />
+          <Route path="/aboutme" element={<AboutMe />} />
+          <Route path="/experience" element={<Experience />} />
+          <Route path="/tools" element={<Tools />} />
+        </Routes>
+      </div>
+    </Router>
   );
 }
 
