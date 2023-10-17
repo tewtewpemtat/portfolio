@@ -14,19 +14,19 @@ function App() {
       <div className="App">
         <nav>
           <ul>
+            <li><Link to="/aboutme">About Me</Link></li>
             <li><Link to="/contact">Contact</Link></li>
             <li><Link to="/skills">Skills</Link></li>
             <li><Link to="/education">Education</Link></li>
-            <li><Link to="/aboutme">About Me</Link></li>
             <li><Link to="/experience">Experience</Link></li>
-            <li><Link to="/tools">Tools/Programming Language</Link></li>
+            <li><Link to="/tools">Tools</Link></li>
           </ul>
         </nav>
         <Routes>
+          <Route path="/aboutme" element={<AboutMe />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/skills" element={<Skills />} />
           <Route path="/education" element={<Education />} />
-          <Route path="/aboutme" element={<AboutMe />} />
           <Route path="/experience" element={<Experience />} />
           <Route path="/tools" element={<Tools />} />
         </Routes>
