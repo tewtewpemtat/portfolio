@@ -34,9 +34,9 @@ const AboutMe = () => {
         fontFamily: 'Arial, sans-serif', 
         boxShadow: '0px 0px 10px 0px rgba(0,0,0,0.1)', 
         }}>
-        <h2 style={{ color: '#673AB7' }}>Hello, I'm Tew</h2> 
+        <h2 style={{ color: '#673AB7', fontStyle:'oblique', textShadow: '1px 1px 1px #000000' }}>ABOUT ME</h2>
         <p>
-              21 years old<br/>
+              Hello, I'm Tew 21 years old<br/>
               Currently studying at King Mongkut's University of Technology North Bangkok, majoring in Electronics Engineering, Computer Branch.<br />
               I have a strong interest in enhancing my skills in web development, mobile app development, database design, front-end, and back-end development. I am passionate about advancing these skills individually or in tandem.<br />
               I have excellent teamwork and communication skills, which enable me to work effectively with others to produce the best results.
