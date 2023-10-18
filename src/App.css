@@ -1,3 +1,13 @@
+body {
+  background-image: url('./img/bg4.jpg'); 
+  background-size: cover; 
+  background-repeat: no-repeat; 
+  background-position: center; 
+  height: 80vh; 
+  width: 100%; 
+
+}
+
 .App {
   text-align: center;
 }
@@ -8,12 +18,16 @@ nav {
   left: 50%;
   transform: translateX(-50%);
   background: #f2f2f2;
-  padding: 30px;
   border: 1px solid #ddd;
   border-radius: 5px;
   display: inline-block;
   z-index: 1000;
   width: 100%;
+  background-image: url('./img/bg2.jpg'); 
+  background-size: cover; 
+  background-repeat: no-repeat; 
+  border-radius: 0px;
+
 }
 
 nav ul {
