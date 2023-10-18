@@ -1,8 +1,28 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 
 const AboutMe = () => {
+  const [currentImage, setCurrentImage] = useState(0);
+
+  const images = [
+    './myphoto/1.jpg', 
+    './myphoto/2.jpg',
+    './myphoto/3.jpg',
+  ];
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentImage((currentImage + 1) % images.length);
+    }, 3000); 
+
+    return () => clearInterval(interval);
+  }, [currentImage, images.length]);
+
+
   return (
-    <div style={{ paddingTop: '150px' }}>
+    <div style={{ paddingTop: '70px' }}>
+      <div style={{ display: 'flex', justifyContent: 'center', marginTop: '20px' }}>
+        <img src={images[currentImage]} alt={`slide ${currentImage + 1}`} style={{ width: '300px', height: '300px', objectFit: 'cover', margin: '0 20px' }} />
+      </div>
       <div>
         <h2>Hello, I'm Tew</h2>
         <p>21 years old</p>
