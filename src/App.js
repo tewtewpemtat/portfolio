@@ -6,11 +6,12 @@ import Education from './details/education';
 import AboutMe from './details/aboutme';
 import Experience from './details/experience';
 import Tools from './details/tools';
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Link,Navigate } from 'react-router-dom';
+
 
 function App() {
   return (
-    <Router >
+    <Router>
       <div className="App">
         <nav>
           <ul>
@@ -23,6 +24,7 @@ function App() {
           </ul>
         </nav>
         <Routes>
+          <Route path="/" element={<Navigate to="/aboutme" />} /> 
           <Route path="/aboutme" element={<AboutMe />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/skills" element={<Skills />} />
