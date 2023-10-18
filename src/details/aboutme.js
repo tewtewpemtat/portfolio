@@ -23,7 +23,7 @@ const AboutMe = () => {
         <img src={images[currentImage]} alt={`slide ${currentImage + 1}`} style={{ width: '300px', height: '300px', objectFit: 'cover', margin: '0 20px' }} />
       </div>
       <div style={{
-        border: '10px solid #B279D2',
+        border: '10px solid #E1BEE7',
         padding: '20px', 
         borderRadius: '10px', 
         textAlign: 'center', 
@@ -34,7 +34,7 @@ const AboutMe = () => {
         fontFamily: 'Arial, sans-serif', 
         boxShadow: '0px 0px 10px 0px rgba(0,0,0,0.1)', 
         }}>
-        <h2 style={{ color: '#1A237E' }}>Hello, I'm Tew</h2> 
+        <h2 style={{ color: '#673AB7' }}>Hello, I'm Tew</h2> 
         <p>
               21 years old<br/>
               Currently studying at King Mongkut's University of Technology North Bangkok, majoring in Electronics Engineering, Computer Branch.<br />
