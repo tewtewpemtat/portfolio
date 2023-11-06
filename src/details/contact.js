@@ -1,6 +1,32 @@
-import React from 'react';
-
+import React, {useState} from 'react';
 const Contact = () => {
+
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    phone: '',
+    message: ''
+  });
+
+   const handleSubmit = (e) => {
+    e.preventDefault();
+    const { name, email, phone, message } = formData;
+    if (!name || !email || !phone || !message) {
+      alert('Please fill in complete information.');
+    } else {
+      alert('Successfully');
+    }
+  };
+
+  const handleInputChange = (e) => {
+    const { name, value } = e.target;
+    setFormData((prevData) => ({
+      ...prevData,
+      [name]: value
+    }));
+  };
+
+
   return (
     <div style={{ paddingTop: '40px' }}>
       <div
@@ -34,17 +60,17 @@ const Contact = () => {
       <h1 style={{ }}>Message Us</h1>
 </div>
 <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-  <form style={{ fontSize: '20px', display: 'flex', flexDirection: 'column', alignItems: 'flex-start', width: '500px' }}>
-    <label style={{ marginBottom: '10px', fontWeight: 'bold', color: '#333' }} htmlFor="name">Name:</label>
-    <input style={{ padding: '10px', marginBottom: '20px', width: '100%', borderRadius: '5px', border: '1px solid #ddd' }} type="text" id="name" name="name" />
-    <label style={{ marginBottom: '10px', fontWeight: 'bold', color: '#333' }} htmlFor="email">Email:</label>
-    <input style={{padding: '10px', marginBottom: '20px', width: '100%', borderRadius: '5px', border: '1px solid #ddd' }} type="email" id="email" name="email" />
-    <label style={{ marginBottom: '10px', fontWeight: 'bold', color: '#333' }} htmlFor="phone">Phone:</label>
-    <input style={{padding: '10px', marginBottom: '20px', width: '100%', borderRadius: '5px', border: '1px solid #ddd' }} type="text" id="phone" name="phone" />
-    <label style={{ marginBottom: '10px', fontWeight: 'bold', color: '#333' }} htmlFor="message">Message:</label>
-    <textarea style={{ padding: '10px', marginBottom: '20px', width: '100%', height: '100px', borderRadius: '5px', border: '1px solid #ddd' }} id="message" name="message" />
-    <input style={{ padding: '10px 20px', backgroundColor: '#4CAF50', color: 'white', border: 'none', borderRadius: '5px', cursor: 'pointer', width: '20%' }} type="submit" value="Send" />
-  </form>
+    <form style={{ fontSize: '20px', display: 'flex', flexDirection: 'column', alignItems: 'flex-start', width: '500px'}} onSubmit={handleSubmit}>
+      <label style={{ marginBottom: '10px', fontWeight: 'bold', color: '#333' }} htmlFor="name">Name:</label>
+      <input style={{ padding: '10px', marginBottom: '20px', width: '100%', borderRadius: '5px', border: '1px solid #ddd' }} type="text" id="name" name="name" onChange={handleInputChange} value={formData.name} />
+      <label style={{ marginBottom: '10px', fontWeight: 'bold', color: '#333' }} htmlFor="email">Email:</label>
+      <input style={{padding: '10px', marginBottom: '20px', width: '100%', borderRadius: '5px', border: '1px solid #ddd' }} type="email" id="email" name="email" onChange={handleInputChange} value={formData.email} />
+      <label style={{ marginBottom: '10px', fontWeight: 'bold', color: '#333' }} htmlFor="phone">Phone:</label>
+      <input style={{padding: '10px', marginBottom: '20px', width: '100%', borderRadius: '5px', border: '1px solid #ddd' }} type="text" id="phone" name="phone" onChange={handleInputChange} value={formData.phone} />
+      <label style={{ marginBottom: '10px', fontWeight: 'bold', color: '#333' }} htmlFor="message">Message:</label>
+      <textarea style={{ padding: '10px', marginBottom: '20px', width: '100%', height: '100px', borderRadius: '5px', border: '1px solid #ddd' }} id="message" name="message" onChange={handleInputChange} value={formData.message} />
+      <input style={{ padding: '10px 20px', backgroundColor: '#4CAF50', color: 'white', border: 'none', borderRadius: '5px', cursor: 'pointer', width: '20%' }} type="submit" value="Send" />
+    </form>
 </div>
 
 
