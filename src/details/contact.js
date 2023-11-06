@@ -10,9 +10,9 @@ const Contact = () => {
           height: 350,
         }}
       >
-<h2 style={{ paddingTop: '20px' }}>Contact Us</h2>
-<div style={{ display: 'flex', justifyContent: 'center' }}>
-  <div style={{ margin: '0 90px' }}>
+    <h1 style={{ paddingTop: '20px' }}>Contact Us</h1>
+    <div style={{ display: 'flex', justifyContent: 'center' }}>
+   <div style={{ margin: '0 90px' }}>
     <img src="./img/phone.png" alt="telephone" style={{ width: '100px', height: '100px' }} />
     <h2>080-678-0227</h2>
   </div>
@@ -29,25 +29,28 @@ const Contact = () => {
 </div>
       </div>
 
-      <form>
-        <label htmlFor="name">Name:</label>
-        <br />
-        <input type="text" id="name" name="name" />
-        <br />
-        <label htmlFor="email">Email:</label>
-        <br />
-        <input type="email" id="email" name="email" />
-        <br />
-        <label htmlFor="phone">Phone:</label>
-        <br />
-        <input type="text" id="phone" name="phone" />
-        <br />
-        <label htmlFor="message">Message:</label>
-        <br />
-        <textarea id="message" name="message" rows="4" cols="50" />
-        <br />
-        <input type="submit" value="Submit" />
-      </form>
+
+      <div style={{ display: 'flex', justifyContent: 'center', marginTop: '10px' }}>
+      <h1 style={{ }}>Message Us</h1>
+</div>
+<div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+  <form style={{ fontSize: '20px', display: 'flex', flexDirection: 'column', alignItems: 'flex-start', width: '500px' }}>
+    <label style={{ marginBottom: '10px', fontWeight: 'bold', color: '#333' }} htmlFor="name">Name:</label>
+    <input style={{ padding: '10px', marginBottom: '20px', width: '100%', borderRadius: '5px', border: '1px solid #ddd' }} type="text" id="name" name="name" />
+    <label style={{ marginBottom: '10px', fontWeight: 'bold', color: '#333' }} htmlFor="email">Email:</label>
+    <input style={{padding: '10px', marginBottom: '20px', width: '100%', borderRadius: '5px', border: '1px solid #ddd' }} type="email" id="email" name="email" />
+    <label style={{ marginBottom: '10px', fontWeight: 'bold', color: '#333' }} htmlFor="phone">Phone:</label>
+    <input style={{padding: '10px', marginBottom: '20px', width: '100%', borderRadius: '5px', border: '1px solid #ddd' }} type="text" id="phone" name="phone" />
+    <label style={{ marginBottom: '10px', fontWeight: 'bold', color: '#333' }} htmlFor="message">Message:</label>
+    <textarea style={{ padding: '10px', marginBottom: '20px', width: '100%', height: '100px', borderRadius: '5px', border: '1px solid #ddd' }} id="message" name="message" />
+    <input style={{ padding: '10px 20px', backgroundColor: '#4CAF50', color: 'white', border: 'none', borderRadius: '5px', cursor: 'pointer', width: '20%' }} type="submit" value="Send" />
+  </form>
+</div>
+
+
+
+
+
     </div>
   );
 };

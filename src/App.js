@@ -8,7 +8,6 @@ import Experience from './details/experience';
 import Tools from './details/tools';
 import { BrowserRouter as Router, Routes, Route, Link,Navigate } from 'react-router-dom';
 
-
 function App() {
   return (
     <Router>
