@@ -28,7 +28,7 @@ const Contact = () => {
 
 
   return (
-    <div style={{ paddingTop: '40px' }}>
+    <div style={{ paddingTop: '30px' }}>
       <div
         style={{
           background: `url('./img/bg1.jpg')`,
