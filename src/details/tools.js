@@ -82,7 +82,6 @@ const Tools = () => {
           <img src="./img/Java.png" alt="Java" style={img} />
           <p style={{ marginTop: '20px', fontSize: '20px', fontStyle:'oblique',fontWeight: 'bold' }}>Java</p>
         </div>
-    
       </div>
 
       <div style={{ display: 'flex', justifyContent: 'center' }}>
@@ -102,9 +101,7 @@ const Tools = () => {
           <img src="./img/Js.png" alt="JavaScript" style={img} />
           <p style={{ marginTop: '20px', fontSize: '20px', fontStyle:'oblique',fontWeight: 'bold' }}>JavaScript</p>
         </div>
-
       </div>
-
     </div>
 
     
