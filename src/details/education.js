@@ -34,7 +34,7 @@ const Education = () => {
     <div style={{ paddingTop: '60px' }}>
       <div style={{ display: 'flex', justifyContent: 'center' }}>
         <div style={blockStyle}>
-          <img src="./myphoto/kmutnb.png" alt="University" style={imgStyle} />
+          <img src="./img/kmutnb.png" alt="University" style={imgStyle} />
           <h2 style={universityStyle}>King Mongkut's University of Technology North Bangkok</h2>
           <p style={textStyle}>Electronics Engineering Technology</p>
           <p style={textStyle}>4th year</p>
@@ -45,7 +45,7 @@ const Education = () => {
 
       <div style={{ display: 'flex', justifyContent: 'center' }}>
         <div style={blockStyle}>
-          <img src="./myphoto/Mbk.png" alt="University" style={imgStyle} />
+          <img src="./img/Mbk.png" alt="University" style={imgStyle} />
           <h2 style={universityStyle}>Mubankru Technological College</h2>
           <p style={textStyle}>Electronics</p>
           <p style={textStyle}>3rd year</p>
