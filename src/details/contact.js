@@ -28,8 +28,8 @@ const Contact = () => {
 
   return (
     <div style={{ paddingTop: '30px' }}>
-      <div style={{ background: `url('./img/bg8.jpg')`, backgroundSize: 'cover', height: 360 }}>
-        <h1 style={{ paddingTop: '20px', paddingBottom: '10px', textAlign: 'center' }}>Contact Us</h1>
+      <div style={{ background: `url('./img/bg8.jpg')`, backgroundSize: 'cover', height: 380 }}>
+        <h1 style={{ paddingTop: '20px', paddingBottom: '15px',textShadow: '0px 1px 1px #000000', textAlign: 'center' }}>Contact Us</h1>
         <div style={{ display: 'flex', justifyContent: 'center' }}>
           <div style={{ margin: '0 90px' }}>
             <img src="./img/phone.png" alt="telephone" style={{ width: '100px', height: '100px' }} />
@@ -49,7 +49,7 @@ const Contact = () => {
       </div>
 
       <div style={{ display: 'flex', justifyContent: 'center', marginTop: '10px' }}>
-        <h1 style={{}}>Message Us</h1>
+        <h1 style={{textShadow: '0px 1px 1px #000000'}}>Message Us</h1>
       </div>
       <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
         <form style={{ fontSize: '20px', display: 'flex', flexDirection: 'column', alignItems: 'flex-start', width: '500px' }} onSubmit={handleSubmit}>
