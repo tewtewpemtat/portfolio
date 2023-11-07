@@ -15,8 +15,8 @@ const Tools = () => {
 
   return (
     <div style={{ paddingTop: '80px' }}>
-      <h1 style={{ textAlign: 'center', fontSize: '30px', fontWeight: 'bold', marginBottom:'0px',textShadow: '1px 1px 1px #000000', color: 'black' }}>TOOLS</h1>
-      <hr style={{ marginBottom: '40px', width: '5%', height: '3px', backgroundColor: '#9C27B0', border: '0px', boxShadow: '0px 2px 2px #888888' }} />
+      <h1 style={{ textAlign: 'center', fontSize: '30px', fontWeight: 'bold', marginBottom:'0px',textShadow: '1px 1px 1px #000000', color: 'black' }}>Tools</h1>
+      <hr style={{ marginBottom: '40px', width: '4%', height: '3px', backgroundColor: '#9C27B0', border: '0px', boxShadow: '0px 2px 2px #888888' }} />
       <div style={{ display: 'flex', justifyContent: 'center' }}>
         <div style={text}>
           <img src="./img/Flutter.png" alt="Web Development" style={img} />
@@ -63,8 +63,8 @@ const Tools = () => {
         </div>
       </div>
 
-      <h1 style={{ textAlign: 'center', fontSize: '30px', fontWeight: 'bold', marginBottom:'0px',textShadow: '1px 1px 1px #000000', color: 'black',marginTop:'15px' }}>LANGUAGES</h1>
-      <hr style={{ marginBottom: '50px', width: '11%', height: '3px', backgroundColor: '#9C27B0', border: '0px', boxShadow: '0px 2px 2px #888888' }} />
+      <h1 style={{ textAlign: 'center', fontSize: '30px', fontWeight: 'bold', marginBottom:'0px',textShadow: '1px 1px 1px #000000', color: 'black',marginTop:'15px' }}>Programming Languages</h1>
+      <hr style={{ marginBottom: '50px', width: '23%', height: '3px', backgroundColor: '#9C27B0', border: '0px', boxShadow: '0px 2px 2px #888888' }} />
       <div style={{ display: 'flex', justifyContent: 'center' }}>
         <div style={text}>
           <img src="./img/Html.png" alt="HTML" style={img} />

@@ -3,7 +3,7 @@ import React from 'react';
 const Skills = () => {
   return (
     <div style={{ paddingTop: '80px' }}>
-      <h1 style={{ textAlign: 'center', fontSize: '30px', fontWeight: 'bold', marginBottom:'0px',textShadow: '1px 1px 1px #000000', color: 'black' }}>My Skills</h1>
+      <h1 style={{ textAlign: 'center', fontSize: '30px', fontWeight: 'bold', marginBottom:'0px',textShadow: '0px 1px 1px #000000', color: 'black' }}>My Skills</h1>
       <hr style={{ marginBottom: '30px', width: '8%', height: '3px', backgroundColor: '#9C27B0', border: '0px', boxShadow: '0px 2px 2px #888888' }} />
       <div style={{ display: 'flex', justifyContent: 'center' }}>
         <div style={{ margin: '90px', marginTop: '0px', textAlign: 'center' }}>
