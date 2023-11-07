@@ -20,7 +20,7 @@ const AboutMe = () => {
   return (
     <div style={{ paddingTop: '70px' }}>
       <div style={{ display: 'flex', justifyContent: 'center', marginTop: '20px',marginBottom: '20px' }}>
-        <img src={images[currentImage]} alt={`slide ${currentImage + 1}`} style={{ width: '300px', height: '300px', objectFit: 'cover', margin: '0 20px' }} />
+        <img src={images[currentImage]} alt={`slide ${currentImage + 1}`} style={{ width: '300px', height: '300px', objectFit: 'cover', margin: '0 20px',borderRadius: '50%' }} />
       </div>
       <div style={{
         border: '10px solid #E1BEE7',
@@ -29,7 +29,7 @@ const AboutMe = () => {
         textAlign: 'center', 
         maxWidth: '600px', 
         margin: '0 auto', 
-        background: `url('./img/bg3.jpg')`,
+        background: `url('./img/bg10.jpg')`,
         backgroundSize: 'cover',
         fontFamily: 'Arial, sans-serif', 
         boxShadow: '0px 0px 10px 0px rgba(0,0,0,0.1)', 

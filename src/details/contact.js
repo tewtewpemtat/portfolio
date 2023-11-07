@@ -31,12 +31,12 @@ const Contact = () => {
     <div style={{ paddingTop: '30px' }}>
       <div
         style={{
-          background: `url('./img/bg1.jpg')`,
+          background: `url('./img/bg8.jpg')`,
           backgroundSize: 'cover',
-          height: 350,
+          height: 360,
         }}
       >
-    <h1 style={{ paddingTop: '20px' }}>Contact Us</h1>
+    <h1 style={{ paddingTop: '20px',paddingBottom:'10px' }}>Contact Us</h1>
     <div style={{ display: 'flex', justifyContent: 'center' }}>
    <div style={{ margin: '0 90px' }}>
     <img src="./img/phone.png" alt="telephone" style={{ width: '100px', height: '100px' }} />

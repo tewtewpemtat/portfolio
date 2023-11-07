@@ -7,7 +7,7 @@ const Experience = () => {
     borderRadius: '10px',
     justifyContent: 'start',
     boxShadow: '0 4px 8px 0 rgba(0, 0, 0, 0.2)',
-    backgroundImage: "url('./img/bg4.jpg')",
+    backgroundImage: "url('./img/bg8.jpg')",
     backgroundSize: 'cover',
     width: '1000px',
     height: '500px',
